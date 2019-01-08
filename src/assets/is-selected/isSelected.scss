@@ -1,0 +1,66 @@
+.App{
+  position: relative;
+  .more{
+    padding-top: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    height: 100vh;
+    z-index: 10000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    .screen{
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+  .more__inner{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+  }
+  &.is-selected{
+    .more{
+      display: block;
+      .screen{
+      }
+    }
+  }
+}
+
+
+
+
+
+.more__panel{
+  padding: 10px;
+}
+.more__column__inner{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.more__column__thumb{
+  width: 40px;
+  height: 40px;
+}
+.more__column__thumb img{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}

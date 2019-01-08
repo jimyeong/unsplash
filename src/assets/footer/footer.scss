@@ -1,0 +1,30 @@
+@import "../scss/mixin";
+
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background-color: #fff;
+  border-top:1px solid rgba(0,0,0,0.2);
+  z-index: 1000;
+  @include sc-mob{
+    display: none;
+  }
+}
+.footer__inner{
+  display: flex;
+  justify-content:flex-start;
+  align-self:center;
+  font-size: 15px;
+  color: #333;
+  @include sc-mob{
+    display: block;
+  }
+}
+.footer__link{
+  color: #888;
+  border-bottom: 1px solid #999;
+}

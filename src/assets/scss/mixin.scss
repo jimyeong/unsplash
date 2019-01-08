@@ -1,0 +1,30 @@
+$medium-size:990px;
+$mobile-size:680px;
+$bg-point:#3cb46e;
+$bg-point-hover: #37a866;
+$ft__normal:#888;
+$ft__bright:#fff;
+.btn{
+  outline:none;
+  border:none;
+  background-color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  color: #888;
+}
+.btn:focus{
+  outline:none;
+}
+
+@mixin sc-mid{
+  @media only screen and (max-width:$medium-size){
+    @content
+    }
+}
+@mixin sc-mob{
+  @media only screen and (max-width:$mobile-size){
+    @content
+    }
+}
