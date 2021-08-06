@@ -10,7 +10,6 @@ import Footer from './assets/footer/Footer';
 import {Link,NavLink,Route,BrowserRouter} from 'react-router-dom';
 import { unsplashApi } from './keys';
 const {API,ACCESS_KEY} =unsplashApi;
-// const ACCESS_KEY = '57efe3990235cfb37315596fa4d1de1c32173100d16f3642df68a54b03d1ff0a';
 class App extends Component {
 
     state ={
