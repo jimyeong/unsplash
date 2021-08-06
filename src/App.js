@@ -7,17 +7,10 @@ import Home from './assets/page/Home';
 import Thumb from './assets/component/thumb/Thumb';
 import IsSelected from './assets/is-selected/IsSelected';
 import Footer from './assets/footer/Footer';
-
 import {Link,NavLink,Route,BrowserRouter} from 'react-router-dom';
-
-const API ="https://api.unsplash.com/photos/?client_id=";
-const ACCESS_KEY = '57efe3990235cfb37315596fa4d1de1c32173100d16f3642df68a54b03d1ff0a';
-
-
-
-
-
-
+import { unsplashApi } from './keys';
+const {API,ACCESS_KEY} =unsplashApi;
+// const ACCESS_KEY = '57efe3990235cfb37315596fa4d1de1c32173100d16f3642df68a54b03d1ff0a';
 class App extends Component {
 
     state ={
@@ -45,7 +38,6 @@ class App extends Component {
     };
     _showSelected = (e) => {
         e.preventDefault();
-        console.log('hi it work');
         this.setState({
             selected : !this.state.selected
         })
